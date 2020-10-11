@@ -67,4 +67,7 @@ print(binary_search2(my_list2, n2))
 #    greet2()
 
 #def greet2():
-# 3.2 
+# 3.2
+def infinityRecursion():
+    return infinityRecursion()
+print(infinityRecursion())
