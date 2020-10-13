@@ -99,3 +99,19 @@ def fact(x):
         return x * fact(x -1)
 
 print(fact(5))
+
+# 4) Быстрая сортировка
+# Счётчик суммы в массиве через массив
+def sum(arr):
+    total = 0
+    for x in arr:
+        total += x
+    return total
+
+print(sum([1, 2, 3, 4]))
+# Быстрая сортировка
+def quick_sort(array):
+    if len(array) < 2:
+        return array
+
+print(quick_sort(([15, 10]) + [33] + quick_sort([])))

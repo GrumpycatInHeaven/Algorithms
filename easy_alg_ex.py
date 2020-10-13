@@ -71,3 +71,23 @@ print(binary_search2(my_list2, n2))
 def infinityRecursion():
     return infinityRecursion()
 print(infinityRecursion())
+# Срабатывает exception
+
+# 4) Быстрая сортировка
+# 4.1.2/4.2
+def r_sum(arr):
+    if arr:
+        return arr[0] + r_sum(arr[1:])
+    return 0
+
+print(r_sum([3, 6, 2, 1]))
+# 4.3
+def r_biggest(arr):
+    if len(arr) == 1:
+        return arr[0]
+    else:
+        biggest = r_biggest(arr[1:])
+        return biggest if biggest > arr[0] else arr[0]
+
+print(r_biggest([3, 6, 2, 1]))
+# 4.4
